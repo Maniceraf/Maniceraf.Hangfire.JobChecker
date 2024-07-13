@@ -34,20 +34,7 @@ public class JobHunterDemo : IJobHunter
     {
         if (context.Exception != null)
         {
-            var title = $"Hangfire Job Failed - Job #: {context.JobId}";
-            var div = new DivTag();
-            div.AddChildren(new H4Tag($"Server #: {context.ServerId}"));
-            div.AddChildren(new H4Tag($"Job #: {context.JobId}"));
-            div.AddChildren(new H4Tag($"Job: {context.Job}"));
-            div.AddChildren(new H4Tag($"Created At: {context.CreatedAt.ToString("dd/MM/yyyy hh:mm:ss tt")}"));
-            var a = new H4Tag($"Exception: {context.Exception.InnerException?.Message}. {context.Exception.InnerException?.StackTrace}");
-            a.AddAttribute("style", "color:red");
-            div.AddChildren(a);
-
-            var document = new HtmlDocument();
-            document.Body.AddChildren(div);
-
-            await _emailService.SendEmailAsync("hungnguyen8102000@gmail.com", title, document.ToString());
+            await _emailService.SendEmailAsync("hungnguyen8102000@gmail.com", $"Hangfire Job Failed - Job #: {context.JobId}", $"Exception: {context.Exception.InnerException?.Message}. {context.Exception.InnerException?.StackTrace}");
         }
 
         await Task.CompletedTask;
