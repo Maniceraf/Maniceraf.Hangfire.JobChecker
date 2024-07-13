@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maniceraf.Hangfire.JobChecker", "Maniceraf.Hangfire.JobChecker\Maniceraf.Hangfire.JobChecker.csproj", "{F4F99E57-303F-4A24-8AAC-5E959A7EEAEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4F99E57-303F-4A24-8AAC-5E959A7EEAEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F99E57-303F-4A24-8AAC-5E959A7EEAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F99E57-303F-4A24-8AAC-5E959A7EEAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F99E57-303F-4A24-8AAC-5E959A7EEAEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9591F3F-D823-4058-A67B-87C76E8BD11A}
+	EndGlobalSection
+EndGlobal
